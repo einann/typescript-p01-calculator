@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.calc-container {
+    width: 300px;
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+    background-color: #aaa;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calc-items {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #333;
+}
+
+.calc-item {
+    padding: 1.5rem 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    grid-column: span 3; /* 4 items in a row */
+    cursor: pointer;
+    color: #fff;
+}
+
+.calc-item:hover {
+    background-color: #777;
+}
+
+.calc-input-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+#calc-input-result {
+    align-self: flex-end;
+    font-size: large;
+    color: #fff;
+}
+
+#calc-input-num {
+    border: 0;
+    padding: 1rem;
+    background-color: #666;
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+}
+
+#calc-input-num:focus {
+    outline: none;
+}
