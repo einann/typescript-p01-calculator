@@ -1,3 +1,3 @@
-My first project while learning TypeScript
+My first project written in TypeScript
 
 Simple Calculator
